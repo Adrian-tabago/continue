@@ -74,7 +74,6 @@ Partial Class Form2
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -557,7 +556,6 @@ Partial Class Form2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel2.Controls.Add(Me.Button4)
         Me.Panel2.Controls.Add(Me.PictureBox16)
         Me.Panel2.Controls.Add(Me.PictureBox15)
         Me.Panel2.Controls.Add(Me.Label3)
@@ -717,15 +715,6 @@ Partial Class Form2
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "File Complaint"
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(502, 21)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 56
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -817,5 +806,6 @@ Partial Class Form2
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents Button4 As Button
+=======
+>>>>>>> 0481155bf933b8c9f53ceac0d0e37c15844320cf
 End Class
