@@ -10,15 +10,7 @@ Public Class FormStatus
     End Sub
 
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        Form1.Show()
-        Me.Hide()
-        Form1.txtUsername.Clear()
-        Form1.txtBoxPass.Clear()
-        Form2.txtBoxAddress.Clear()
-        Form2.txtBoxContact.Clear()
-        Form2.txtBoxDesc.Clear()
-    End Sub
+
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
 
@@ -69,7 +61,20 @@ Public Class FormStatus
 
     End Sub
 
-    Private Sub dataStatus_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dataStatus.CellContentClick
 
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        Form1.Show()
+        Me.Hide()
+        Form1.txtUsername.Clear()
+        Form1.txtBoxPass.Clear()
+        Form2.txtBoxAddress.Clear()
+        Form2.txtBoxContact.Clear()
+        Form2.txtBoxDesc.Clear()
+    End Sub
+
+    Private Sub btnComplain_Click_1(sender As Object, e As EventArgs) Handles btnComplain.Click
+        Form2.Show()
+        Me.Hide()
     End Sub
 End Class
