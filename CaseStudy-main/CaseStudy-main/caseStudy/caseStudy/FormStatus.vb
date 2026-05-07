@@ -1,7 +1,14 @@
-﻿Public Class FormStatus
+﻿Imports System.Xml
 
+Public Class FormStatus
+
+    Public Shared pendings As Integer = 0
+    Public Shared under As Integer = 0
+    Public Shared resolve As Integer = 0
     Private Sub FormStatus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CmbUpStatus.DropDownStyle = ComboBoxStyle.DropDownList
+
+
     End Sub
 
 
@@ -16,13 +23,43 @@
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+
         Dim index As Integer = dataStatus.CurrentCell.ColumnIndex
-        If Index = 4 Then
+
+        If index = 4 Then
+
             dataStatus.CurrentCell.Value = CmbUpStatus.Text
+
+            'RESET COUNTERS (MUST BE OUTSIDE LOOP)
+            pendings = 0
+            under = 0
+            resolve = 0
+
+            'LOOP ALL ROWS
+            For Each row As DataGridViewRow In dataStatus.Rows
+
+                If row.IsNewRow Then Continue For
+
+                Dim status As String = Convert.ToString(row.Cells(4).Value)
+
+                If status = "Pending" Then
+                    pendings += 1
+
+                ElseIf status = "Under Investigation" Then
+                    under += 1
+
+                ElseIf status = "Resolved" Then
+                    resolve += 1
+                End If
+
+            Next
 
         Else
             MessageBox.Show("You can't change that value")
         End If
+
+        Label1.Text = resolve
+
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click

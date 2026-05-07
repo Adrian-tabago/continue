@@ -63,4 +63,32 @@
         FormStatus.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        FormStatus.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Sub btnSearchFuntion_Click(sender As Object, e As EventArgs)
+
+
+        MessageBox.Show("BUTTON WORKS")
+
+    End Sub
+
+    Private Sub btnSearchFunction_Click(sender As Object, e As EventArgs) Handles btnSearchFunction.Click
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnSearchFunction.Click
+        MessageBox.Show("BUTTON WORKS")
+    End Sub
 End Class

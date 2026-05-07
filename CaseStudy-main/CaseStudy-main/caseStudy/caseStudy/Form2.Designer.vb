@@ -22,6 +22,7 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.label = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -45,6 +46,7 @@ Partial Class Form2
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtBoxDesc = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnSearchFunction = New System.Windows.Forms.Button()
         Me.FlowLayoutPanel3 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -52,7 +54,6 @@ Partial Class Form2
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -61,7 +62,7 @@ Partial Class Form2
         Me.btnComplain = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -75,8 +76,6 @@ Partial Class Form2
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -213,7 +212,7 @@ Partial Class Form2
         'PictureBox13
         '
         Me.PictureBox13.BackColor = System.Drawing.Color.White
-        Me.PictureBox13.Image = Global.caseStudy.My.Resources.Resources.Start_Menu_Program_Defaults_icon
+        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
         Me.PictureBox13.Location = New System.Drawing.Point(524, 78)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(51, 46)
@@ -224,7 +223,7 @@ Partial Class Form2
         'PictureBox12
         '
         Me.PictureBox12.BackColor = System.Drawing.Color.White
-        Me.PictureBox12.Image = Global.caseStudy.My.Resources.Resources.Speaker_icon
+        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
         Me.PictureBox12.Location = New System.Drawing.Point(524, 29)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(51, 38)
@@ -235,7 +234,7 @@ Partial Class Form2
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.Color.White
-        Me.PictureBox11.Image = Global.caseStudy.My.Resources.Resources.home_icon__1_
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
         Me.PictureBox11.Location = New System.Drawing.Point(188, 79)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(47, 42)
@@ -246,7 +245,7 @@ Partial Class Form2
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.PictureBox10.Image = Global.caseStudy.My.Resources.Resources.f3e8d67a_99cb_43a8_8da3_d7086a283d80
+        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
         Me.PictureBox10.Location = New System.Drawing.Point(185, 20)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(58, 47)
@@ -351,6 +350,7 @@ Partial Class Form2
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.btnSearchFunction)
         Me.Panel1.Controls.Add(Me.FlowLayoutPanel3)
         Me.Panel1.Controls.Add(Me.Label14)
         Me.Panel1.Controls.Add(Me.Label13)
@@ -358,7 +358,6 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.PictureBox6)
@@ -371,6 +370,22 @@ Partial Class Form2
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(225, 771)
         Me.Panel1.TabIndex = 20
+        '
+        'btnSearchFunction
+        '
+        Me.btnSearchFunction.BackColor = System.Drawing.Color.White
+        Me.btnSearchFunction.FlatAppearance.BorderSize = 0
+        Me.btnSearchFunction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSearchFunction.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearchFunction.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnSearchFunction.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnSearchFunction.Location = New System.Drawing.Point(66, 404)
+        Me.btnSearchFunction.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
+        Me.btnSearchFunction.Name = "btnSearchFunction"
+        Me.btnSearchFunction.Size = New System.Drawing.Size(134, 36)
+        Me.btnSearchFunction.TabIndex = 57
+        Me.btnSearchFunction.Text = "Search"
+        Me.btnSearchFunction.UseVisualStyleBackColor = False
         '
         'FlowLayoutPanel3
         '
@@ -413,7 +428,7 @@ Partial Class Form2
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.White
-        Me.PictureBox4.Image = Global.caseStudy.My.Resources.Resources.log_out_icon
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(26, 478)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(42, 35)
@@ -440,7 +455,7 @@ Partial Class Form2
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.White
-        Me.PictureBox3.Image = Global.caseStudy.My.Resources.Resources.search_icon
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(26, 391)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(42, 35)
@@ -448,26 +463,10 @@ Partial Class Form2
         Me.PictureBox3.TabIndex = 41
         Me.PictureBox3.TabStop = False
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(65, 391)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(127, 36)
-        Me.Button2.TabIndex = 40
-        Me.Button2.Text = "Search"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
-        Me.PictureBox1.Image = Global.caseStudy.My.Resources.Resources.Time_icon
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(26, 331)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(42, 35)
@@ -494,7 +493,7 @@ Partial Class Form2
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.White
-        Me.PictureBox6.Image = Global.caseStudy.My.Resources.Resources.home_icon
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
         Me.PictureBox6.Location = New System.Drawing.Point(26, 270)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(42, 35)
@@ -521,7 +520,7 @@ Partial Class Form2
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.White
-        Me.PictureBox2.Image = Global.caseStudy.My.Resources.Resources.home_icon
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(26, 202)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(42, 35)
@@ -547,7 +546,7 @@ Partial Class Form2
         '
         'PictureBox5
         '
-        Me.PictureBox5.Image = Global.caseStudy.My.Resources.Resources._809ad8b0_c11f_4f72_a430_4c9186257b0b_removebg_preview
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.Location = New System.Drawing.Point(15, -2)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(177, 143)
@@ -559,9 +558,7 @@ Partial Class Form2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel2.Controls.Add(Me.Button7)
         Me.Panel2.Controls.Add(Me.Button6)
-        Me.Panel2.Controls.Add(Me.Button4)
         Me.Panel2.Controls.Add(Me.PictureBox16)
         Me.Panel2.Controls.Add(Me.PictureBox15)
         Me.Panel2.Controls.Add(Me.Label3)
@@ -588,19 +585,19 @@ Partial Class Form2
         Me.Panel2.Size = New System.Drawing.Size(1102, 658)
         Me.Panel2.TabIndex = 21
         '
-        'Button4
+        'Button6
         '
-        Me.Button4.Location = New System.Drawing.Point(468, 21)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 56
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button6.Location = New System.Drawing.Point(611, 21)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(134, 38)
+        Me.Button6.TabIndex = 57
+        Me.Button6.Text = "Button6"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'PictureBox16
         '
         Me.PictureBox16.BackColor = System.Drawing.Color.RoyalBlue
-        Me.PictureBox16.Image = Global.caseStudy.My.Resources.Resources.bx_log_in_icon
+        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
         Me.PictureBox16.Location = New System.Drawing.Point(373, 595)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(42, 35)
@@ -611,7 +608,7 @@ Partial Class Form2
         'PictureBox15
         '
         Me.PictureBox15.BackColor = System.Drawing.Color.White
-        Me.PictureBox15.Image = Global.caseStudy.My.Resources.Resources.home_icon
+        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
         Me.PictureBox15.Location = New System.Drawing.Point(37, 339)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(42, 35)
@@ -632,7 +629,7 @@ Partial Class Form2
         'PictureBox14
         '
         Me.PictureBox14.BackColor = System.Drawing.Color.White
-        Me.PictureBox14.Image = Global.caseStudy.My.Resources.Resources.File_icon
+        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
         Me.PictureBox14.Location = New System.Drawing.Point(714, 91)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(42, 35)
@@ -661,7 +658,7 @@ Partial Class Form2
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.White
-        Me.PictureBox9.Image = Global.caseStudy.My.Resources.Resources.Mobile_Phone_1_icon
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
         Me.PictureBox9.Location = New System.Drawing.Point(33, 249)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(37, 36)
@@ -681,7 +678,7 @@ Partial Class Form2
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.White
-        Me.PictureBox8.Image = Global.caseStudy.My.Resources.Resources.Location_2_icon
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
         Me.PictureBox8.Location = New System.Drawing.Point(31, 159)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(37, 34)
@@ -702,7 +699,7 @@ Partial Class Form2
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.Color.White
-        Me.PictureBox7.Image = Global.caseStudy.My.Resources.Resources.profile_icon
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
         Me.PictureBox7.Location = New System.Drawing.Point(33, 95)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(36, 31)
@@ -729,24 +726,6 @@ Partial Class Form2
         Me.Label5.Size = New System.Drawing.Size(257, 50)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "File Complaint"
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(611, 21)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(134, 38)
-        Me.Button6.TabIndex = 57
-        Me.Button6.Text = "Button6"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(372, 111)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(147, 54)
-        Me.Button7.TabIndex = 58
-        Me.Button7.Text = "Button7"
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Form2
         '
@@ -810,7 +789,6 @@ Partial Class Form2
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label5 As Label
@@ -839,7 +817,6 @@ Partial Class Form2
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents Button4 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents btnSearchFunction As Button
 End Class
