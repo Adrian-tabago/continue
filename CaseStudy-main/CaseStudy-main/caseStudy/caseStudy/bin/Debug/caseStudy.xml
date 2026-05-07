@@ -1,0 +1,206 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+caseStudy
+</name>
+</assembly>
+<members>
+<member name="T:caseStudy.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources._1787371d_36fb_4222_a47f_b409e33020a8">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources._809ad8b0_c11f_4f72_a430_4c9186257b0b">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources._809ad8b0_c11f_4f72_a430_4c9186257b0b_removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources._83a28586_5dc6_4343_8466_a5ce4155665f">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources._83a28586_5dc6_4343_8466_a5ce4155665f1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources._83a28586_5dc6_4343_8466_a5ce4155665f2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Apps_Icon_Template_File_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Arrows_Right_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Arrows_Right_icon__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Arrows_Right_icon__1_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Black_Gray_Minimalist_Light_Pollution_Presentation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.blue_unlock_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.bx_log_in_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.circle_24_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.circle_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Custom_Icon_Design_Mono_General_3_Home_512">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.f3e8d67a_99cb_43a8_8da3_d7086a283d80">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.File_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Healthcare_Scales_Of_Balance_Filled_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.hombutton_white_home_button_11563211148zdfdwfoi16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.hombutton_white_home_button_11563211148zdfdwfoi161">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.home_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.home_icon__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Icons8_Ios7_Arrows_Right_512">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Location_2_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.log_out_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Mobile_Phone_1_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.more_horiz_circle_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.profile_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Screenshot_2026_04_30_111648">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.search_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Speaker_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Start_Menu_Program_Defaults_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.Time_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.user_icon_in_flat_style_person_icon_client_symbol_vector">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:caseStudy.My.Resources.Resources.User_Interface_Login_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
