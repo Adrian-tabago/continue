@@ -52,7 +52,7 @@ Partial Class Form2
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.btnSearchF = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -61,7 +61,6 @@ Partial Class Form2
         Me.btnComplain = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.txtname = New System.Windows.Forms.TextBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
@@ -77,6 +76,7 @@ Partial Class Form2
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,13 +90,13 @@ Partial Class Form2
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'label
@@ -359,7 +359,7 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.btnSearchF)
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.PictureBox6)
@@ -449,21 +449,21 @@ Partial Class Form2
         Me.PictureBox3.TabIndex = 41
         Me.PictureBox3.TabStop = False
         '
-        'btnSearchF
+        'Button2
         '
-        Me.btnSearchF.BackColor = System.Drawing.Color.White
-        Me.btnSearchF.FlatAppearance.BorderSize = 0
-        Me.btnSearchF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchF.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnSearchF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnSearchF.Location = New System.Drawing.Point(65, 391)
-        Me.btnSearchF.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
-        Me.btnSearchF.Name = "btnSearchF"
-        Me.btnSearchF.Size = New System.Drawing.Size(127, 36)
-        Me.btnSearchF.TabIndex = 40
-        Me.btnSearchF.Text = "Search"
-        Me.btnSearchF.UseVisualStyleBackColor = False
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.Location = New System.Drawing.Point(65, 391)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(127, 36)
+        Me.Button2.TabIndex = 40
+        Me.Button2.Text = "Search"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -588,17 +588,6 @@ Partial Class Form2
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1102, 658)
         Me.Panel2.TabIndex = 21
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.BackColor = System.Drawing.Color.White
-        Me.PictureBox17.Image = Global.caseStudy.My.Resources.Resources.profile_icon
-        Me.PictureBox17.Location = New System.Drawing.Point(145, 87)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(36, 31)
-        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox17.TabIndex = 59
-        Me.PictureBox17.TabStop = False
         '
         'txtname
         '
@@ -752,6 +741,17 @@ Partial Class Form2
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "File Complaint"
         '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.Color.White
+        Me.PictureBox17.Image = Global.caseStudy.My.Resources.Resources.profile_icon
+        Me.PictureBox17.Location = New System.Drawing.Point(145, 87)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(36, 31)
+        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox17.TabIndex = 59
+        Me.PictureBox17.TabStop = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -781,13 +781,13 @@ Partial Class Form2
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -815,7 +815,7 @@ Partial Class Form2
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents btnSearchF As Button
+    Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label5 As Label

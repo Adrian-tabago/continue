@@ -41,18 +41,3 @@ C:\Users\adria\source\repos\Adrian-tabago\continue\CaseStudy-main\CaseStudy-main
 C:\Users\adria\source\repos\Adrian-tabago\continue\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.exe
 C:\Users\adria\source\repos\Adrian-tabago\continue\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.xml
 C:\Users\adria\source\repos\Adrian-tabago\continue\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.pdb
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\bin\Debug\caseStudy.exe.config
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\bin\Debug\caseStudy.exe
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\bin\Debug\caseStudy.pdb
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\bin\Debug\caseStudy.xml
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.vbproj.AssemblyReference.cache
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.Form1.resources
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.Form2.resources
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.FormSearch.resources
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.FormStatus.resources
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.Resources.resources
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.vbproj.GenerateResource.cache
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.vbproj.CoreCompileInputs.cache
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.exe
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.xml
-D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.pdb
