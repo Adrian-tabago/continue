@@ -142,17 +142,8 @@
         txtBoxDesc.Clear()
     End Sub
 
-    Private Sub btnSearchF_Click(sender As Object, e As EventArgs) Handles btnSearchF.Click
-
-        MessageBox.Show("Button2 works")
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        FormSearch.Show()
+        Me.Hide()
     End Sub
 End Class

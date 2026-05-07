@@ -52,7 +52,7 @@ Partial Class Form2
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.btnSearchF = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -359,7 +359,7 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.btnSearchF)
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.PictureBox6)
@@ -449,21 +449,21 @@ Partial Class Form2
         Me.PictureBox3.TabIndex = 41
         Me.PictureBox3.TabStop = False
         '
-        'btnSearchF
+        'Button2
         '
-        Me.btnSearchF.BackColor = System.Drawing.Color.White
-        Me.btnSearchF.FlatAppearance.BorderSize = 0
-        Me.btnSearchF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearchF.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnSearchF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnSearchF.Location = New System.Drawing.Point(65, 391)
-        Me.btnSearchF.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
-        Me.btnSearchF.Name = "btnSearchF"
-        Me.btnSearchF.Size = New System.Drawing.Size(127, 36)
-        Me.btnSearchF.TabIndex = 40
-        Me.btnSearchF.Text = "Search"
-        Me.btnSearchF.UseVisualStyleBackColor = False
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.Location = New System.Drawing.Point(65, 391)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(127, 36)
+        Me.Button2.TabIndex = 40
+        Me.Button2.Text = "Search"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -815,7 +815,7 @@ Partial Class Form2
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents btnSearchF As Button
+    Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label5 As Label
