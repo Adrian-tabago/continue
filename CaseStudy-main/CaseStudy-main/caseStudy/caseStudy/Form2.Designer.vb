@@ -61,6 +61,7 @@ Partial Class Form2
         Me.btnComplain = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -74,7 +75,7 @@ Partial Class Form2
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -557,6 +558,7 @@ Partial Class Form2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel2.Controls.Add(Me.Button6)
         Me.Panel2.Controls.Add(Me.Button4)
         Me.Panel2.Controls.Add(Me.PictureBox16)
         Me.Panel2.Controls.Add(Me.PictureBox15)
@@ -583,6 +585,15 @@ Partial Class Form2
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1102, 658)
         Me.Panel2.TabIndex = 21
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(468, 21)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 56
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'PictureBox16
         '
@@ -717,14 +728,14 @@ Partial Class Form2
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "File Complaint"
         '
-        'Button4
+        'Button6
         '
-        Me.Button4.Location = New System.Drawing.Point(468, 21)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 56
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button6.Location = New System.Drawing.Point(611, 21)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(134, 38)
+        Me.Button6.TabIndex = 57
+        Me.Button6.Text = "Button6"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Form2
         '
@@ -818,4 +829,5 @@ Partial Class Form2
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox16 As PictureBox
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button6 As Button
 End Class
