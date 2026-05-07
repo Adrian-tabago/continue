@@ -76,6 +76,7 @@ Partial Class Form2
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,6 +96,7 @@ Partial Class Form2
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'label
@@ -558,6 +560,7 @@ Partial Class Form2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel2.Controls.Add(Me.PictureBox17)
         Me.Panel2.Controls.Add(Me.txtname)
         Me.Panel2.Controls.Add(Me.Button6)
         Me.Panel2.Controls.Add(Me.PictureBox16)
@@ -738,6 +741,17 @@ Partial Class Form2
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "File Complaint"
         '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.Color.White
+        Me.PictureBox17.Image = Global.caseStudy.My.Resources.Resources.profile_icon
+        Me.PictureBox17.Location = New System.Drawing.Point(145, 87)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(36, 31)
+        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox17.TabIndex = 59
+        Me.PictureBox17.TabStop = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -773,6 +787,7 @@ Partial Class Form2
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -831,4 +846,5 @@ Partial Class Form2
     Friend WithEvents PictureBox16 As PictureBox
     Friend WithEvents Button6 As Button
     Friend WithEvents txtname As TextBox
+    Friend WithEvents PictureBox17 As PictureBox
 End Class
