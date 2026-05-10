@@ -72,7 +72,7 @@
 
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub btnBack_Click(sender As Object, e As EventArgs)
 
         FormStatus.Show()
         Me.Hide()
@@ -85,5 +85,27 @@
 
     Private Sub cmbSearchCategory_SelectedIndexChanged_1(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub btnComplain_Click(sender As Object, e As EventArgs) Handles btnComplain.Click
+        Form2.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        FormStatus.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Form1.Show()
+        Me.Hide()
+        Form1.txtUsername.Clear()
+        Form1.txtBoxPass.Clear()
+        Form2.txtBoxAddress.Clear()
+        Form2.txtBoxContact.Clear()
+        Form2.txtBoxDesc.Clear()
     End Sub
 End Class
