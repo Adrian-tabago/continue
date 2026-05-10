@@ -51,6 +51,22 @@ Partial Class FormSearch
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.dgvPending = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.dgvSearchResults, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,32 +76,33 @@ Partial Class FormSearch
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.dgvPending, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtSearchName
         '
-        Me.txtSearchName.Location = New System.Drawing.Point(642, 231)
-        Me.txtSearchName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtSearchName.Location = New System.Drawing.Point(529, 353)
         Me.txtSearchName.Name = "txtSearchName"
-        Me.txtSearchName.Size = New System.Drawing.Size(224, 26)
+        Me.txtSearchName.Size = New System.Drawing.Size(151, 20)
         Me.txtSearchName.TabIndex = 0
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(640, 283)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnSearch.Location = New System.Drawing.Point(528, 387)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(226, 35)
+        Me.btnSearch.Size = New System.Drawing.Size(151, 23)
         Me.btnSearch.TabIndex = 2
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(640, 355)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnClear.Location = New System.Drawing.Point(528, 434)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(226, 35)
+        Me.btnClear.Size = New System.Drawing.Size(151, 23)
         Me.btnClear.TabIndex = 3
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
@@ -97,14 +114,13 @@ Partial Class FormSearch
         Me.dgvSearchResults.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvSearchResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSearchResults.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colName, Me.colAddress, Me.colContact, Me.colCategory, Me.colStatus, Me.colDate})
-        Me.dgvSearchResults.Location = New System.Drawing.Point(4, 5)
-        Me.dgvSearchResults.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.dgvSearchResults.Location = New System.Drawing.Point(138, 343)
         Me.dgvSearchResults.MultiSelect = False
         Me.dgvSearchResults.Name = "dgvSearchResults"
         Me.dgvSearchResults.ReadOnly = True
         Me.dgvSearchResults.RowHeadersWidth = 62
         Me.dgvSearchResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvSearchResults.Size = New System.Drawing.Size(873, 193)
+        Me.dgvSearchResults.Size = New System.Drawing.Size(192, 125)
         Me.dgvSearchResults.TabIndex = 4
         '
         'colName
@@ -154,10 +170,9 @@ Partial Class FormSearch
         Me.cmbSearchCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbSearchCategory.FormattingEnabled = True
         Me.cmbSearchCategory.Items.AddRange(New Object() {"All", "Noise", "Dispute", "Infrastructure", "Others"})
-        Me.cmbSearchCategory.Location = New System.Drawing.Point(421, 359)
-        Me.cmbSearchCategory.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cmbSearchCategory.Location = New System.Drawing.Point(382, 436)
         Me.cmbSearchCategory.Name = "cmbSearchCategory"
-        Me.cmbSearchCategory.Size = New System.Drawing.Size(180, 28)
+        Me.cmbSearchCategory.Size = New System.Drawing.Size(121, 21)
         Me.cmbSearchCategory.TabIndex = 6
         '
         'Panel1
@@ -180,29 +195,26 @@ Partial Class FormSearch
         Me.Panel1.Controls.Add(Me.FlowLayoutPanel2)
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(-14, 5)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel1.Location = New System.Drawing.Point(-9, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(340, 989)
+        Me.Panel1.Size = New System.Drawing.Size(228, 644)
         Me.Panel1.TabIndex = 25
         '
         'FlowLayoutPanel3
         '
         Me.FlowLayoutPanel3.BackColor = System.Drawing.Color.Black
-        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(6, 703)
-        Me.FlowLayoutPanel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(4, 457)
         Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
-        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(315, 2)
+        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(210, 1)
         Me.FlowLayoutPanel3.TabIndex = 67
         '
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.White
         Me.PictureBox4.Image = Global.caseStudy.My.Resources.Resources.log_out_icon
-        Me.PictureBox4.Location = New System.Drawing.Point(39, 726)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox4.Location = New System.Drawing.Point(26, 472)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(63, 54)
+        Me.PictureBox4.Size = New System.Drawing.Size(42, 35)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 66
         Me.PictureBox4.TabStop = False
@@ -215,10 +227,10 @@ Partial Class FormSearch
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.Location = New System.Drawing.Point(98, 726)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(68, 0, 0, 0)
+        Me.Button3.Location = New System.Drawing.Point(65, 472)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(189, 55)
+        Me.Button3.Size = New System.Drawing.Size(126, 36)
         Me.Button3.TabIndex = 65
         Me.Button3.Text = "Log-out"
         Me.Button3.UseVisualStyleBackColor = False
@@ -227,10 +239,9 @@ Partial Class FormSearch
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.White
         Me.PictureBox3.Image = Global.caseStudy.My.Resources.Resources.search_icon
-        Me.PictureBox3.Location = New System.Drawing.Point(39, 592)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox3.Location = New System.Drawing.Point(26, 385)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(63, 54)
+        Me.PictureBox3.Size = New System.Drawing.Size(42, 35)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 64
         Me.PictureBox3.TabStop = False
@@ -243,10 +254,10 @@ Partial Class FormSearch
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(98, 592)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(68, 0, 0, 0)
+        Me.Button2.Location = New System.Drawing.Point(65, 385)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(190, 55)
+        Me.Button2.Size = New System.Drawing.Size(127, 36)
         Me.Button2.TabIndex = 63
         Me.Button2.Text = "Search"
         Me.Button2.UseVisualStyleBackColor = False
@@ -255,10 +266,9 @@ Partial Class FormSearch
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Image = Global.caseStudy.My.Resources.Resources.Time_icon
-        Me.PictureBox1.Location = New System.Drawing.Point(39, 500)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(26, 325)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(63, 54)
+        Me.PictureBox1.Size = New System.Drawing.Size(42, 35)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 62
         Me.PictureBox1.TabStop = False
@@ -271,10 +281,10 @@ Partial Class FormSearch
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.Location = New System.Drawing.Point(87, 498)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(68, 0, 0, 0)
+        Me.Button1.Location = New System.Drawing.Point(58, 324)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(201, 55)
+        Me.Button1.Size = New System.Drawing.Size(134, 36)
         Me.Button1.TabIndex = 61
         Me.Button1.Text = "Status"
         Me.Button1.UseVisualStyleBackColor = False
@@ -283,10 +293,9 @@ Partial Class FormSearch
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.White
         Me.PictureBox6.Image = Global.caseStudy.My.Resources.Resources.home_icon
-        Me.PictureBox6.Location = New System.Drawing.Point(39, 406)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox6.Location = New System.Drawing.Point(26, 264)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(63, 54)
+        Me.PictureBox6.Size = New System.Drawing.Size(42, 35)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 60
         Me.PictureBox6.TabStop = False
@@ -299,10 +308,10 @@ Partial Class FormSearch
         Me.Button5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button5.Location = New System.Drawing.Point(64, 406)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(68, 0, 0, 0)
+        Me.Button5.Location = New System.Drawing.Point(43, 264)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(236, 55)
+        Me.Button5.Size = New System.Drawing.Size(157, 36)
         Me.Button5.TabIndex = 59
         Me.Button5.Text = "Summary"
         Me.Button5.UseVisualStyleBackColor = False
@@ -311,10 +320,9 @@ Partial Class FormSearch
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.White
         Me.PictureBox2.Image = Global.caseStudy.My.Resources.Resources.home_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(39, 302)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox2.Location = New System.Drawing.Point(26, 196)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(63, 54)
+        Me.PictureBox2.Size = New System.Drawing.Size(42, 35)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 58
         Me.PictureBox2.TabStop = False
@@ -327,10 +335,10 @@ Partial Class FormSearch
         Me.btnComplain.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnComplain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnComplain.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnComplain.Location = New System.Drawing.Point(75, 300)
-        Me.btnComplain.Margin = New System.Windows.Forms.Padding(68, 0, 0, 0)
+        Me.btnComplain.Location = New System.Drawing.Point(50, 195)
+        Me.btnComplain.Margin = New System.Windows.Forms.Padding(45, 0, 0, 0)
         Me.btnComplain.Name = "btnComplain"
-        Me.btnComplain.Size = New System.Drawing.Size(236, 55)
+        Me.btnComplain.Size = New System.Drawing.Size(157, 36)
         Me.btnComplain.TabIndex = 57
         Me.btnComplain.Text = "Complain"
         Me.btnComplain.UseVisualStyleBackColor = False
@@ -340,10 +348,9 @@ Partial Class FormSearch
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(105, 229)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(70, 149)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(91, 40)
+        Me.Label14.Size = New System.Drawing.Size(61, 25)
         Me.Label14.TabIndex = 55
         Me.Label14.Text = "Portal"
         '
@@ -352,29 +359,26 @@ Partial Class FormSearch
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(15, 188)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(10, 122)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(290, 45)
+        Me.Label13.Size = New System.Drawing.Size(190, 30)
         Me.Label13.TabIndex = 54
         Me.Label13.Text = "Complaint System"
         '
         'FlowLayoutPanel2
         '
         Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.Black
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 274)
-        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 178)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(315, 2)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(210, 1)
         Me.FlowLayoutPanel2.TabIndex = 53
         '
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.caseStudy.My.Resources.Resources._809ad8b0_c11f_4f72_a430_4c9186257b0b_removebg_preview
-        Me.PictureBox5.Location = New System.Drawing.Point(22, -3)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox5.Location = New System.Drawing.Point(15, -2)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(266, 220)
+        Me.PictureBox5.Size = New System.Drawing.Size(177, 143)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 44
         Me.PictureBox5.TabStop = False
@@ -383,25 +387,165 @@ Partial Class FormSearch
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel2.Controls.Add(Me.Panel5)
+        Me.Panel2.Controls.Add(Me.Panel4)
+        Me.Panel2.Controls.Add(Me.Panel3)
+        Me.Panel2.Controls.Add(Me.dgvPending)
         Me.Panel2.Controls.Add(Me.dgvSearchResults)
         Me.Panel2.Controls.Add(Me.cmbSearchCategory)
         Me.Panel2.Controls.Add(Me.btnClear)
         Me.Panel2.Controls.Add(Me.btnSearch)
         Me.Panel2.Controls.Add(Me.txtSearchName)
-        Me.Panel2.Location = New System.Drawing.Point(354, 24)
+        Me.Panel2.Location = New System.Drawing.Point(236, 16)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(885, 955)
+        Me.Panel2.Size = New System.Drawing.Size(827, 622)
         Me.Panel2.TabIndex = 26
+        '
+        'dgvPending
+        '
+        Me.dgvPending.AllowUserToAddRows = False
+        Me.dgvPending.AllowUserToDeleteRows = False
+        Me.dgvPending.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvPending.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPending.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.dgvPending.Location = New System.Drawing.Point(31, 183)
+        Me.dgvPending.MultiSelect = False
+        Me.dgvPending.Name = "dgvPending"
+        Me.dgvPending.ReadOnly = True
+        Me.dgvPending.RowHeadersWidth = 62
+        Me.dgvPending.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvPending.Size = New System.Drawing.Size(671, 125)
+        Me.dgvPending.TabIndex = 7
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Name"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Address"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Contact"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Category"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Status"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Date"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(44, 17)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "pending"
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(30, 70)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 0
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Button4)
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Location = New System.Drawing.Point(74, 36)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(149, 125)
+        Me.Panel3.TabIndex = 8
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.Button6)
+        Me.Panel4.Controls.Add(Me.Label2)
+        Me.Panel4.Location = New System.Drawing.Point(262, 36)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(149, 125)
+        Me.Panel4.TabIndex = 9
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(30, 70)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 0
+        Me.Button6.Text = "Button6"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.Location = New System.Drawing.Point(44, 17)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "resolve"
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Button7)
+        Me.Panel5.Controls.Add(Me.Label3)
+        Me.Panel5.Location = New System.Drawing.Point(499, 36)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(149, 125)
+        Me.Panel5.TabIndex = 9
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(30, 70)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 0
+        Me.Button7.Text = "Button7"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.Location = New System.Drawing.Point(44, 17)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "under"
         '
         'FormSearch
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
-        Me.ClientSize = New System.Drawing.Size(1859, 991)
+        Me.ClientSize = New System.Drawing.Size(1370, 487)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FormSearch"
         Me.Text = "Formsearch"
         CType(Me.dgvSearchResults, System.ComponentModel.ISupportInitialize).EndInit()
@@ -415,6 +559,10 @@ Partial Class FormSearch
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.dgvPending, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -448,4 +596,20 @@ Partial Class FormSearch
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents dgvPending As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
 End Class
