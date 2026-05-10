@@ -1,5 +1,5 @@
 ﻿Public Class Form2
-
+    Public Shared Pendings As Integer = 0
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rdBtnOthers.Checked = True
         'txtBoxComOthers.ReadOnly = True
@@ -102,7 +102,7 @@
             MessageBox.Show("Complaint Updated")
 
         End If
-
+        Pendings += 1
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs)

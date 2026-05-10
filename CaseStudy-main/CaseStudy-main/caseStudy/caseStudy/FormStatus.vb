@@ -23,7 +23,7 @@ Public Class FormStatus
             dataStatus.CurrentCell.Value = CmbUpStatus.Text
 
             'RESET COUNTERS (MUST BE OUTSIDE LOOP)
-            pendings = 0
+            Form2.Pendings = 0
             under = 0
             resolve = 0
 
@@ -35,7 +35,7 @@ Public Class FormStatus
                 Dim status As String = Convert.ToString(row.Cells(4).Value)
 
                 If status = "Pending" Then
-                    pendings += 1
+                    Form2.Pendings += 1
 
                 ElseIf status = "Under Investigation" Then
                     under += 1
@@ -83,5 +83,9 @@ Public Class FormStatus
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         FormSearch.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub dataStatus_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dataStatus.CellContentClick
+
     End Sub
 End Class

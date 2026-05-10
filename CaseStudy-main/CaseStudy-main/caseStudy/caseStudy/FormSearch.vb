@@ -12,6 +12,14 @@
 
     End Sub
 
+    Private Sub Form2_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+
+        Button4.Text = Form2.Pendings
+        Button6.Text = FormStatus.resolve
+        Button7.Text = FormStatus.under
+
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         Dim nameSearch As String = txtSearchName.Text.ToLower()
         Dim categorySearch As String = cmbSearchCategory.Text.ToLower()
