@@ -51,7 +51,7 @@ Partial Class FormSearch
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvPending = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -76,7 +76,7 @@ Partial Class FormSearch
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPending, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -390,7 +390,7 @@ Partial Class FormSearch
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Controls.Add(Me.DataGridView1)
+        Me.Panel2.Controls.Add(Me.dgvPending)
         Me.Panel2.Controls.Add(Me.dgvSearchResults)
         Me.Panel2.Controls.Add(Me.cmbSearchCategory)
         Me.Panel2.Controls.Add(Me.btnClear)
@@ -402,21 +402,21 @@ Partial Class FormSearch
         Me.Panel2.Size = New System.Drawing.Size(827, 622)
         Me.Panel2.TabIndex = 26
         '
-        'DataGridView1
+        'dgvPending
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
-        Me.DataGridView1.Location = New System.Drawing.Point(31, 183)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(671, 125)
-        Me.DataGridView1.TabIndex = 7
+        Me.dgvPending.AllowUserToAddRows = False
+        Me.dgvPending.AllowUserToDeleteRows = False
+        Me.dgvPending.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvPending.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPending.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.dgvPending.Location = New System.Drawing.Point(31, 183)
+        Me.dgvPending.MultiSelect = False
+        Me.dgvPending.Name = "dgvPending"
+        Me.dgvPending.ReadOnly = True
+        Me.dgvPending.RowHeadersWidth = 62
+        Me.dgvPending.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvPending.Size = New System.Drawing.Size(671, 125)
+        Me.dgvPending.TabIndex = 7
         '
         'DataGridViewTextBoxColumn1
         '
@@ -559,7 +559,7 @@ Partial Class FormSearch
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPending, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
@@ -605,7 +605,7 @@ Partial Class FormSearch
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Button4 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvPending As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn

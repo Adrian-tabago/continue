@@ -116,4 +116,100 @@
         Form2.txtBoxContact.Clear()
         Form2.txtBoxDesc.Clear()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        'CLEAR GRID
+        dgvPending.Rows.Clear()
+
+        'LOOP MAIN GRID
+        For Each row As DataGridViewRow In FormStatus.dataStatus.Rows
+
+            If row.IsNewRow Then Continue For
+
+            'CHECK IF PENDING
+            If row.Cells(4).Value.ToString() = "Resolved" Then
+
+                dgvPending.Rows.Add(
+                row.Cells(0).Value,
+                row.Cells(1).Value,
+                row.Cells(2).Value,
+                row.Cells(3).Value,
+                row.Cells(4).Value,
+                row.Cells(5).Value
+            )
+
+            End If
+
+        Next
+
+        'SORT DATE COLUMN
+        dgvPending.Sort(
+        dgvPending.Columns(5),
+        System.ComponentModel.ListSortDirection.Ascending
+    )
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        'CLEAR GRID
+        dgvPending.Rows.Clear()
+
+        'LOOP MAIN GRID
+        For Each row As DataGridViewRow In FormStatus.dataStatus.Rows
+
+            If row.IsNewRow Then Continue For
+
+            'CHECK IF PENDING
+            If row.Cells(4).Value.ToString() = "Resolved" Then
+
+                dgvPending.Rows.Add(
+                row.Cells(0).Value,
+                row.Cells(1).Value,
+                row.Cells(2).Value,
+                row.Cells(3).Value,
+                row.Cells(4).Value,
+                row.Cells(5).Value
+            )
+
+            End If
+
+        Next
+
+        'SORT DATE COLUMN
+        dgvPending.Sort(
+        dgvPending.Columns(5),
+        System.ComponentModel.ListSortDirection.Ascending
+    )
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        dgvPending.Rows.Clear()
+
+        'LOOP MAIN GRID
+        For Each row As DataGridViewRow In FormStatus.dataStatus.Rows
+
+            If row.IsNewRow Then Continue For
+
+            'CHECK IF PENDING
+            If row.Cells(4).Value.ToString() = "Under Investigation" Then
+
+                dgvPending.Rows.Add(
+                row.Cells(0).Value,
+                row.Cells(1).Value,
+                row.Cells(2).Value,
+                row.Cells(3).Value,
+                row.Cells(4).Value,
+                row.Cells(5).Value
+            )
+
+            End If
+
+        Next
+
+        'SORT DATE COLUMN
+        dgvPending.Sort(
+        dgvPending.Columns(5),
+        System.ComponentModel.ListSortDirection.Ascending
+    )
+
+    End Sub
 End Class
