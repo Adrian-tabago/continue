@@ -15,12 +15,18 @@ Public Class FormStatus
 
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-
         Dim index As Integer = dataStatus.CurrentCell.ColumnIndex
+        Dim rowIndex As Integer = dataStatus.CurrentCell.RowIndex
 
         If index = 4 Then
 
+            'UPDATE NORMAL GRID
             dataStatus.CurrentCell.Value = CmbUpStatus.Text
+
+            'UPDATE OVER GRID TOO
+            Form2.over.Rows(rowIndex).Cells(4).Value = CmbUpStatus.Text
+
+
 
             'RESET COUNTERS (MUST BE OUTSIDE LOOP)
             Form2.Pendings = 0

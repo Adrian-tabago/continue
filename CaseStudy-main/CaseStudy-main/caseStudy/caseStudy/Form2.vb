@@ -75,29 +75,70 @@
 
         Next
 
-        'ADD OR UPDATE
+        Dim overdueStatus As String
+
+        'CHECK OVERDUE (7 DAYS RULE)
+        If Date.Now > dateToday.AddDays(7) Then
+            overdueStatus = "Overdue"
+        Else
+            overdueStatus = "Not Overdue"
+        End If
+
         If foundRow = -1 Then
 
-            'ADD NEW ROW
+            ' =========================
+            ' NORMAL GRID
+            ' =========================
             FormStatus.dataStatus.Rows.Add(
-            Form1.usernameGlobal,
-            txtBoxAddress.Text,
-            txtBoxContact.Text,
-            complaintType,
-            "Pending",
-            dateToday
-        )
+        Form1.usernameGlobal,
+        txtBoxAddress.Text,
+        txtBoxContact.Text,
+        complaintType,
+        "Pending",
+        dateToday
+    )
+
+            ' =========================
+            ' OVERDUE GRID
+            ' =========================
+            over.Rows.Add(
+        Form1.usernameGlobal,
+        txtBoxAddress.Text,
+        txtBoxContact.Text,
+        complaintType,
+        "Pending",
+        dateToday,
+        overdueStatus
+    )
 
             MessageBox.Show("Complaint Added")
 
         Else
 
-            'UPDATE EXISTING ROW
+            ' =========================
+            ' UPDATE NORMAL GRID
+            ' =========================
             FormStatus.dataStatus.Rows(foundRow).Cells(1).Value = txtBoxAddress.Text
             FormStatus.dataStatus.Rows(foundRow).Cells(2).Value = txtBoxContact.Text
             FormStatus.dataStatus.Rows(foundRow).Cells(3).Value = complaintType
             FormStatus.dataStatus.Rows(foundRow).Cells(4).Value = "Pending"
             FormStatus.dataStatus.Rows(foundRow).Cells(5).Value = dateToday
+
+            ' =========================
+            ' UPDATE OVERDUE GRID
+            ' =========================
+            over.Rows(foundRow).Cells(1).Value = txtBoxAddress.Text
+            over.Rows(foundRow).Cells(2).Value = txtBoxContact.Text
+            over.Rows(foundRow).Cells(3).Value = complaintType
+            over.Rows(foundRow).Cells(4).Value = "Pending"
+            over.Rows(foundRow).Cells(5).Value = dateToday
+
+            ' RE-CHECK OVERDUE STATUS
+            If Date.Now > dateToday.AddDays(7) Then
+                over.Rows(foundRow).Cells(6).Value = "Overdue"
+            Else
+                over.Rows(foundRow).Cells(6).Value = "Not Overdue"
+            End If
 
             MessageBox.Show("Complaint Updated")
 
