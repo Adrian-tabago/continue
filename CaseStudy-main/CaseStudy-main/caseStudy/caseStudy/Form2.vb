@@ -151,20 +151,20 @@
 
     End Sub
 
-    Private Sub btnComplain_MouseEnter(sender As Object, e As EventArgs) Handles btnComplain.MouseEnter
+    Private Sub btnComplain_MouseEnter(sender As Object, e As EventArgs)
         btnComplain.BackColor = Color.White
     End Sub
 
-    Private Sub btnComplain_MouseLeave(sender As Object, e As EventArgs) Handles btnComplain.MouseLeave
+    Private Sub btnComplain_MouseLeave(sender As Object, e As EventArgs)
         btnComplain.BackColor = Color.White
     End Sub
 
-    Private Sub btnComplain_Click(sender As Object, e As EventArgs) Handles btnComplain.Click
+    Private Sub btnComplain_Click(sender As Object, e As EventArgs)
         FormStatus.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         FormStatus.Show()
         Me.Hide()
     End Sub
@@ -173,7 +173,7 @@
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Form1.Show()
         Me.Hide()
         Form1.txtUsername.Clear()
@@ -183,7 +183,7 @@
         txtBoxDesc.Clear()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         FormSearch.Show()
         Me.Hide()
     End Sub
@@ -192,7 +192,7 @@
 
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -204,7 +204,51 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Form1.Show()
+        Me.Hide()
+        Form1.txtUsername.Clear()
+        Form1.txtBoxPass.Clear()
+        txtBoxAddress.Clear()
+        txtBoxContact.Clear()
+        txtBoxDesc.Clear()
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        FormStatus.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        FormStatus.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        FormSearch.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub rdNoise_CheckedChanged(sender As Object, e As EventArgs) Handles rdNoise.CheckedChanged
+
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        Form1.Show()
+        Me.Hide()
+        Form1.txtUsername.Clear()
+        Form1.txtBoxPass.Clear()
+
+        txtBoxAddress.Clear()
+        txtBoxContact.Clear()
+        txtBoxDesc.Clear()
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
     End Sub
 End Class
