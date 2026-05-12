@@ -13,14 +13,22 @@
             MessageBox.Show("Please fill in all fields")
 
         Else
-            Form1.usernameGlobal = txtUsername.Text
+            If txtUsername.Text = "Admin" And txtBoxPass.Text = "Admin" Then
+                FormStatus.Show()
+                Me.Hide()
+            Else
+                Form1.usernameGlobal = txtUsername.Text
 
-            'OPEN FORM2
-            Form2.Show()
+                'OPEN FORM2
+                Form2.Show()
 
-            Me.Hide()
+                Me.Hide()
+
+            End If
+
 
         End If
 
     End Sub
+
 End Class
