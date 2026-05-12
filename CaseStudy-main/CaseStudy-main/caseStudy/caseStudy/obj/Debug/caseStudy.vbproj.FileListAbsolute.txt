@@ -71,3 +71,4 @@ C:\Users\Admin\Documents\CASESTUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseS
 C:\Users\Admin\Documents\CASESTUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.exe
 C:\Users\Admin\Documents\CASESTUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.xml
 C:\Users\Admin\Documents\CASESTUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.pdb
+D:\F-CASE STUDY\CaseStudy-main\CaseStudy-main\caseStudy\caseStudy\obj\Debug\caseStudy.FormDashboard.resources
