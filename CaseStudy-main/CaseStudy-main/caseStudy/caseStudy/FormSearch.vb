@@ -10,30 +10,109 @@
 
         cmbSearchCategory.SelectedIndex = 0
 
-    End Sub
-
-    Private Sub Form2_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-
-        Button4.Text = Form2.Pendings
-        Button6.Text = FormStatus.resolve
-        Button7.Text = FormStatus.under
-        Button1.Text = FormStatus.rejected
+        LoadAllComplaints()
+        UpdateComplaintCounts()
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
-        Dim categorySearch As String = cmbSearchCategory.Text.ToLower()
+    Private Sub LoadAllComplaints()
 
         dgvPending.Rows.Clear()
 
         For Each row As DataGridViewRow In FormStatus.dataStatus.Rows
 
-            If row.IsNewRow = False Then
+            If row.IsNewRow Then Continue For
 
-                Dim category As String = row.Cells(3).Value.ToString().ToLower()
+            dgvPending.Rows.Add(
+            row.Cells(0).Value,
+            row.Cells(1).Value,
+            row.Cells(2).Value,
+            row.Cells(3).Value,
+            row.Cells(4).Value,
+            row.Cells(5).Value
+        )
 
-                'CHECK IF CATEGORY MATCHES
-                If category = categorySearch Then
+        Next
+
+    End Sub
+
+    Private Sub Form2_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+
+        UpdateComplaintCounts()
+
+    End Sub
+
+    Private Sub UpdateComplaintCounts()
+
+        Dim pendingCount As Integer = 0
+        Dim resolvedCount As Integer = 0
+        Dim underCount As Integer = 0
+        Dim rejectedCount As Integer = 0
+
+        For Each row As DataGridViewRow In FormStatus.dataStatus.Rows
+
+            If row.IsNewRow Then Continue For
+
+            Dim status As String = row.Cells(4).Value.ToString()
+
+            Select Case status
+
+                Case "Pending"
+                    pendingCount += 1
+
+                Case "Resolved"
+                    resolvedCount += 1
+
+                Case "Under Investigation"
+                    underCount += 1
+
+                Case "Rejected"
+                    rejectedCount += 1
+
+            End Select
+
+        Next
+
+        Button4.Text = pendingCount.ToString()
+        Button6.Text = resolvedCount.ToString()
+        Button7.Text = underCount.ToString()
+        Button1.Text = rejectedCount.ToString()
+
+    End Sub
+
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+
+        Dim categorySearch As String = cmbSearchCategory.Text.ToLower()
+
+        'CLEAR GRID
+        dgvPending.Rows.Clear()
+
+        'LOOP MAIN GRID
+        For Each row As DataGridViewRow In FormStatus.dataStatus.Rows
+
+            If row.IsNewRow Then Continue For
+
+            Dim category As String = row.Cells(3).Value.ToString().ToLower()
+
+            If categorySearch = "all" Then
+
+                dgvPending.Rows.Add(
+                    row.Cells(0).Value,
+                    row.Cells(1).Value,
+                    row.Cells(2).Value,
+                    row.Cells(3).Value,
+                    row.Cells(4).Value,
+                    row.Cells(5).Value
+                )
+
+            ElseIf categorySearch = "others" Then
+
+
+                If category <> "noise" AndAlso
+                   category <> "dispute" AndAlso
+                   category <> "infrastructure" Then
 
                     dgvPending.Rows.Add(
                         row.Cells(0).Value,
@@ -46,10 +125,19 @@
 
                 End If
 
+            ElseIf category = categorySearch Then
+
+                dgvPending.Rows.Add(
+                    row.Cells(0).Value,
+                    row.Cells(1).Value,
+                    row.Cells(2).Value,
+                    row.Cells(3).Value,
+                    row.Cells(4).Value,
+                    row.Cells(5).Value
+                )
+
             End If
-
         Next
-
 
     End Sub
 

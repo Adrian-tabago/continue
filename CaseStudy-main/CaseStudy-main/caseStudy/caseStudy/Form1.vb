@@ -8,6 +8,7 @@
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
+
         If txtUsername.Text.Equals("") Or txtBoxPass.Text.Equals("") Then
 
             MessageBox.Show("Please fill in all fields")
