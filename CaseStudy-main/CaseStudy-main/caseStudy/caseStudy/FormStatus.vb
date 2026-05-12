@@ -28,14 +28,14 @@ Public Class FormStatus
             'IF REJECTED -> REMOVE FROM FORM2 GRID
             If CmbUpStatus.Text = "Rejected" Then
 
-                If rowIndex < Form2.over.Rows.Count Then
-                    Form2.over.Rows.RemoveAt(rowIndex)
+                If rowIndex < FormDashboard.over.Rows.Count Then
+                    FormDashboard.over.Rows.RemoveAt(rowIndex)
                 End If
 
             Else
 
                 'UPDATE FORM2 GRID
-                Form2.over.Rows(rowIndex).Cells(4).Value = CmbUpStatus.Text
+                FormDashboard.over.Rows(rowIndex).Cells(4).Value = CmbUpStatus.Text
 
             End If
 

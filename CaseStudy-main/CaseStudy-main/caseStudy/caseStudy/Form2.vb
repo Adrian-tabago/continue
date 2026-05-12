@@ -90,7 +90,7 @@
         dateToday
     )
 
-            over.Rows.Add(
+            FormDashboard.over.Rows.Add(
         Form1.usernameGlobal,
         txtBoxAddress.Text,
         txtBoxContact.Text,
@@ -111,13 +111,13 @@
             FormStatus.dataStatus.Rows(foundRow).Cells(4).Value = "Pending"
             FormStatus.dataStatus.Rows(foundRow).Cells(5).Value = dateToday
 
-            over.Rows(foundRow).Cells(0).Value = Form1.usernameGlobal
-            over.Rows(foundRow).Cells(1).Value = txtBoxAddress.Text
-            over.Rows(foundRow).Cells(2).Value = txtBoxContact.Text
-            over.Rows(foundRow).Cells(3).Value = complaintType
-            over.Rows(foundRow).Cells(4).Value = "Pending"
-            over.Rows(foundRow).Cells(5).Value = dateToday
-            over.Rows(foundRow).Cells(6).Value = overdueStatus
+            FormDashboard.over.Rows(foundRow).Cells(0).Value = Form1.usernameGlobal
+            FormDashboard.over.Rows(foundRow).Cells(1).Value = txtBoxAddress.Text
+            FormDashboard.over.Rows(foundRow).Cells(2).Value = txtBoxContact.Text
+            FormDashboard.over.Rows(foundRow).Cells(3).Value = complaintType
+            FormDashboard.over.Rows(foundRow).Cells(4).Value = "Pending"
+            FormDashboard.over.Rows(foundRow).Cells(5).Value = dateToday
+            FormDashboard.over.Rows(foundRow).Cells(6).Value = overdueStatus
 
             MessageBox.Show("Complaint Updated")
 
