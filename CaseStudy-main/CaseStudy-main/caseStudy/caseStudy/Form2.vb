@@ -243,4 +243,9 @@
     Private Sub over_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        FormDashboard.Show()
+        Me.Hide()
+    End Sub
 End Class

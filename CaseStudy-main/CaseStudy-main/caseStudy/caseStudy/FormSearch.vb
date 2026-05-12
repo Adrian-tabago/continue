@@ -320,4 +320,9 @@
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        FormDashboard.Show()
+        Me.Hide()
+    End Sub
 End Class
